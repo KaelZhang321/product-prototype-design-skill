@@ -207,3 +207,45 @@ The result is acceptable only if:
 - business logic notes explain key behavior
 - reference `.pen` structure cues are absorbed where useful, without overriding the Element Plus visual baseline
 - the page reads visually as a traditional backend management system without requiring extra prompt correction
+
+## Prompt Shortcuts
+
+In normal use, the user should only need one of these:
+
+Minimal page:
+
+```text
+Use the product-prototype-design skill to generate a [业务页面名称] backend prototype.
+```
+
+CRUD page:
+
+```text
+Use the product-prototype-design skill to generate a [业务对象] management prototype with query/add/edit/delete states.
+```
+
+Strong-constraint version:
+
+```text
+Use the product-prototype-design skill to generate a [业务对象] backend CRUD prototype.
+Default to a traditional admin-console shell.
+Use Element Plus semantics.
+Generate 查询页、新增页、修改页、删除页.
+Use the query page as the base.
+Add/edit must use full-page mask + right drawer.
+Delete must use full-page mask + centered confirmation.
+Use a real table and visible pagination.
+Place business logic in page-external notes.
+Canvas size 1920x1080.
+```
+
+These should already be implied and should not require repetition unless the user wants to override them:
+
+- traditional backend-management shell
+- Element Plus semantics
+- real table
+- visible pagination
+- query page as base page
+- add/edit right drawer overlays
+- page-external business note
+- `1920 x 1080` canvas

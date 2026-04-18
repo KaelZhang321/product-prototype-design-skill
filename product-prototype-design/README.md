@@ -17,3 +17,28 @@ References:
 - `references/traditional-admin-checklist.md`
 - `references/crud-state-page-rules.md`
 - `references/pencil-mcp-execution-rules.md`
+
+## Minimal use
+
+```text
+Use the product-prototype-design skill to generate a [业务页面名称] backend prototype.
+```
+
+## CRUD use
+
+```text
+Use the product-prototype-design skill to generate a [业务对象] management prototype with query/add/edit/delete states.
+```
+
+## What you do not need to repeat
+
+The skill already defaults to:
+
+- traditional admin-console shell
+- Element Plus semantics
+- real table
+- visible pagination
+- query page as base page
+- add/edit right drawer overlays
+- page-external business note
+- `1920 x 1080` canvas

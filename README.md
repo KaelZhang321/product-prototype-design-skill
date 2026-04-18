@@ -70,6 +70,47 @@ Use this skill when:
 
 ## Example prompts
 
+### Minimal prompt
+
+```text
+Use the product-prototype-design skill to generate a [业务页面名称] backend prototype.
+```
+
+Example:
+
+```text
+Use the product-prototype-design skill to generate a 通知公告 management backend prototype.
+```
+
+### CRUD minimal prompt
+
+```text
+Use the product-prototype-design skill to generate a [业务对象] management prototype with query/add/edit/delete states.
+```
+
+Example:
+
+```text
+Use the product-prototype-design skill to generate a 用户 management prototype with query/add/edit/delete states.
+```
+
+### Strong-constraint prompt
+
+Use this when you want to force the most predictable result:
+
+```text
+Use the product-prototype-design skill to generate a [业务对象] backend CRUD prototype.
+Default to a traditional admin-console shell.
+Use Element Plus semantics.
+Generate 查询页、新增页、修改页、删除页.
+Use the query page as the base.
+Add/edit must use full-page mask + right drawer.
+Delete must use full-page mask + centered confirmation.
+Use a real table and visible pagination.
+Place business logic in page-external notes.
+Canvas size 1920x1080.
+```
+
 ### Example 1
 
 ```text
@@ -87,6 +128,31 @@ Use the product-prototype-design skill to normalize this .pen admin prototype to
 ```text
 Use the product-prototype-design skill to generate a patient management query page, then derive add/edit/delete overlay pages from it.
 ```
+
+## Recommended real-world usage
+
+For most cases, you only need:
+
+```text
+Use the product-prototype-design skill to generate a [业务页面名称] backend prototype.
+```
+
+If the page is CRUD-heavy, use:
+
+```text
+Use the product-prototype-design skill to generate a [业务对象] management prototype with query/add/edit/delete states.
+```
+
+Do not keep repeating these unless you want to override the defaults:
+
+- traditional backend-management shell
+- Element Plus semantics
+- real table
+- visible pagination
+- query page as base page
+- add/edit with right drawer
+- business note outside the page
+- canvas `1920 x 1080`
 
 ## Repository structure
 
