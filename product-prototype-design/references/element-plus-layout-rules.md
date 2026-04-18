@@ -16,6 +16,7 @@ Use this file for page shell and width rules.
 - table columns should be intentionally distributed
 - preferred page flow is:
   top nav -> sidebar/content body -> page title -> main card -> filter toolbar -> table/pagination
+- for normal backend pages, prefer a traditional admin shell over a stylized SaaS composition
 
 ## Add/Edit Page
 

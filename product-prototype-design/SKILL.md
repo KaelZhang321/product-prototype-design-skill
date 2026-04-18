@@ -15,6 +15,7 @@ This skill is optimized for:
 - admin CRUD pages
 - page-state prototype systems
 - Element Plus-style information architecture
+- traditional admin-console visual shells
 - business-logic-aware prototype review
 
 Default desktop canvas:
@@ -30,6 +31,7 @@ Unless the user explicitly overrides the design system:
 - use Element Plus visual language
 - use Element Plus component semantics
 - use enterprise admin density, spacing, and hierarchy
+- default to a traditional backend-management-system look, not a marketing-style or dashboard-hero look
 - do not ask again for style reference when the request is a normal admin prototype
 - use Element Plus to keep visible component styling consistent, not just to choose structure
 - if a reference `.pen` is provided, extract layout structure, information hierarchy, note format, and content organization from it
@@ -41,6 +43,9 @@ Read:
 - `./references/element-plus-prototype-mapping.md`
 - `./references/element-plus-layout-rules.md`
 - `./references/reference-pen-patterns.md`
+- `./references/traditional-admin-visual-tokens.md`
+- `./references/traditional-admin-shell-rules.md`
+- `./references/traditional-admin-checklist.md`
 
 ### 2. Use page-state modeling for CRUD
 
@@ -102,6 +107,9 @@ Visible pagination is mandatory for query/list pages.
 - on `1920x1080`, keep content visually controlled so it does not feel over-stretched
 - keep the shell stable: top nav, left navigation, page title, then the main work area
 - if the reference `.pen` uses denser list-page composition, absorb its structural hierarchy without copying its non-Element visual tokens directly
+- prefer the traditional admin order:
+  top system bar -> left nav -> tabs or breadcrumb strip -> query toolbar -> action buttons -> table -> bottom-right pagination
+- the result should look like a classic operations/admin system, not a stylized SaaS landing page or card-heavy dashboard
 
 ### 8. Business logic belongs in notes
 
@@ -137,6 +145,8 @@ If a page still looks wrong, keep iterating.
 Unless the user overrides them, assume:
 
 - Element Plus style
+- traditional admin-console shell
+- compact controls and dense information layout
 - reference `.pen` files contribute structure and copywriting patterns, not mandatory visual tokens
 - query/list pages use real tables
 - query/list pages have visible pagination
@@ -152,21 +162,24 @@ Unless the user overrides them, assume:
 2. Choose the page shell and navigation.
 3. If a reference `.pen` exists, extract reusable page-shell, note, table, drawer-content, and copy patterns from it.
 4. Load the relevant Element Plus references.
-5. Reconcile the two layers:
+5. Load the traditional admin-shell references and treat them as the default visual-shape constraint.
+6. Reconcile the three layers:
    - structure and hierarchy from the reference `.pen`
    - visual language and component semantics from Element Plus
-6. Build the query page first.
-7. Verify:
+   - shell density, control scale, and classic admin appearance from the traditional-admin references
+7. Build the query page first.
+8. Verify:
    - filter structure
    - table structure
    - full-width layout
    - visible pagination
-8. Copy the query page into state pages.
-9. Apply overlay states:
+   - traditional admin visual density
+9. Copy the query page into state pages.
+10. Apply overlay states:
    - add/edit: full-page mask + right drawer
    - delete: full-page mask + confirm layer
-10. Add business logic notes.
-11. Screenshot each state page and verify consistency.
+11. Add business logic notes.
+12. Screenshot each state page and verify consistency against the traditional-admin checklist.
 
 ## Required References
 
@@ -174,6 +187,9 @@ Unless the user overrides them, assume:
 - `./references/element-plus-prototype-mapping.md`
 - `./references/element-plus-layout-rules.md`
 - `./references/reference-pen-patterns.md`
+- `./references/traditional-admin-visual-tokens.md`
+- `./references/traditional-admin-shell-rules.md`
+- `./references/traditional-admin-checklist.md`
 - `./references/crud-state-page-rules.md`
 - `./references/pencil-mcp-execution-rules.md`
 
@@ -190,3 +206,4 @@ The result is acceptable only if:
 - no unnecessary right-side whitespace remains on the query page
 - business logic notes explain key behavior
 - reference `.pen` structure cues are absorbed where useful, without overriding the Element Plus visual baseline
+- the page reads visually as a traditional backend management system without requiring extra prompt correction

@@ -12,5 +12,8 @@ References:
 - `references/element-plus-prototype-mapping.md`
 - `references/element-plus-layout-rules.md`
 - `references/reference-pen-patterns.md`
+- `references/traditional-admin-visual-tokens.md`
+- `references/traditional-admin-shell-rules.md`
+- `references/traditional-admin-checklist.md`
 - `references/crud-state-page-rules.md`
 - `references/pencil-mcp-execution-rules.md`

@@ -5,6 +5,7 @@ Business-first product prototype design skill for AI coding agents and prototype
 This skill helps agents build standardized enterprise backend prototypes with:
 
 - Element Plus-style admin UI
+- traditional admin-console shell by default
 - structure learned from reference `.pen` files when available
 - query/add/edit/delete state pages
 - query-page-as-base modeling
@@ -46,14 +47,15 @@ npx skills add <owner>/product-prototype-design-skill --skill product-prototype-
 The skill tells the agent to:
 
 1. Use Element Plus as the default design system.
-2. Extract page-shell and note patterns from a reference `.pen` if one is provided.
-3. Build query pages first.
-4. Use the query page as the base for add/edit/delete state pages.
-5. Use full-page masks for overlay states.
-6. Use right drawers for add/edit by default.
-7. Require real table structures and visible pagination.
-8. Add page-external business logic notes when needed.
-9. Validate each page state visually.
+2. Use a traditional backend-management shell as the default page appearance.
+3. Extract page-shell and note patterns from a reference `.pen` if one is provided.
+4. Build query pages first.
+5. Use the query page as the base for add/edit/delete state pages.
+6. Use full-page masks for overlay states.
+7. Use right drawers for add/edit by default.
+8. Require real table structures and visible pagination.
+9. Add page-external business logic notes when needed.
+10. Validate each page state visually against a traditional-admin checklist.
 
 ## Recommended use cases
 
@@ -101,6 +103,9 @@ product-prototype-design-skill/
         ├── element-plus-prototype-mapping.md
         ├── element-plus-layout-rules.md
         ├── reference-pen-patterns.md
+        ├── traditional-admin-visual-tokens.md
+        ├── traditional-admin-shell-rules.md
+        ├── traditional-admin-checklist.md
         ├── crud-state-page-rules.md
         └── pencil-mcp-execution-rules.md
 ```

@@ -59,6 +59,7 @@ This matches the official Pencil AI-integration guidance:
 Do not force the user to restate these every time:
 
 - Element Plus is the default visual system
+- traditional admin shell is the default page appearance
 - reference `.pen` files are default structural evidence when present
 - query/list pages require real tables
 - query/list pages require visible pagination
