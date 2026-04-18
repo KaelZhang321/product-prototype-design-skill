@@ -110,6 +110,8 @@ Visible pagination is mandatory for query/list pages.
 - prefer the traditional admin order:
   top system bar -> left nav -> tabs or breadcrumb strip -> query toolbar -> action buttons -> table -> bottom-right pagination
 - the result should look like a classic operations/admin system, not a stylized SaaS landing page or card-heavy dashboard
+- query conditions should default to `text label + input component` pairs
+- do not render bare search/select/date components without a visible preceding label unless the user explicitly asks for placeholder-only search
 
 ### 8. Business logic belongs in notes
 

@@ -28,6 +28,8 @@ If the answer to multiple items is "no", the page is not done.
 - Does the query toolbar read as one compact operational block?
 - Is the search field the dominant input when a search task exists?
 - Are filter controls visually aligned and similarly sized?
+- Does each query condition have a visible text label before its control?
+- Are there any naked inputs/selects/date pickers that should have been rendered as label-plus-control pairs?
 
 ## 5. Table
 

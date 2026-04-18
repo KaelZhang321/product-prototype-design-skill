@@ -88,8 +88,9 @@ Rule:
 The reference `.pen` uses a compact filter bar:
 
 - toolbar height near `44`
-- search input first
-- short select/status filters next
+- each condition should read as a compact label-plus-control pair
+- search labels or filter labels should appear before their controls
+- short select/status filters follow the same pattern
 - action buttons aligned right
 - controls usually `32-34` high
 - control corner radius around `6`
@@ -105,8 +106,10 @@ Use this structurally with Element Plus equivalents:
 Rule:
 
 - search field is usually the widest control
+- each filter item should have an explicit visible text label before the control
 - short categorical filters should not consume excessive width
 - do not scatter filters into multiple unrelated rows unless the business fields force it
+- avoid placeholder-only filters as the default rendering strategy
 
 ## 5. Table Pattern
 

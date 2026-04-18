@@ -66,11 +66,13 @@ Expected behavior:
 - widest control is search
 - shorter filters follow
 - query/reset buttons stay aligned right or near the filter cluster
+- each condition should render as `label text + component`, not a naked component by itself
 
 Rule:
 
 - try one row before expanding to two rows
 - if two rows are necessary, still keep them compact and grid-like
+- unless explicitly requested otherwise, search placeholders are supplementary text, not a replacement for visible labels
 
 ## 6. Action Area
 

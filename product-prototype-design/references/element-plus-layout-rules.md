@@ -13,6 +13,7 @@ Use this file for page shell and width rules.
 - visible pagination is required
 - content should not feel over-stretched on the wide canvas
 - filter controls should keep reasonable widths
+- filter items should use visible text labels before controls by default
 - table columns should be intentionally distributed
 - preferred page flow is:
   top nav -> sidebar/content body -> page title -> main card -> filter toolbar -> table/pagination
