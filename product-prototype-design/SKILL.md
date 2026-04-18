@@ -93,9 +93,11 @@ Never use a single text line to fake a table.
 
 If a page contains core business rules:
 
-- add a right-side `note`
-- keep it secondary to the UI
+- add an in-page business rule block
+- keep it secondary to the primary action flow
+- place it inside the page content area, typically above filters or above the main list/detail module
 - use it to explain validation, permissions, status transitions, side effects, and save/delete impact
+- do not place business logic outside the page as an external annotation by default
 
 ### 9. Validation is visual, not assumed
 

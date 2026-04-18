@@ -31,13 +31,13 @@ This skill forces those issues into a consistent prototype workflow.
 After publishing publicly to GitHub, install with:
 
 ```bash
-npx skills add https://github.com/<owner>/product-prototype-design-skill
+npx skills add https://github.com/<owner>/product-prototype-design-skill --skill product-prototype-design
 ```
 
 Or:
 
 ```bash
-npx skills add <owner>/product-prototype-design-skill
+npx skills add <owner>/product-prototype-design-skill --skill product-prototype-design
 ```
 
 ## What the skill does
@@ -86,18 +86,28 @@ Use the product-prototype-design skill to generate a patient management query pa
 
 ## Repository structure
 
-This is a single-skill repository recognized by the skills CLI because the root contains `SKILL.md`.
+This repository is organized in installable skill-directory form.
 
 ```text
 product-prototype-design-skill/
 ├── README.md
-├── SKILL.md
-└── references/
-    ├── element-plus-components-full.md
-    ├── element-plus-prototype-mapping.md
-    ├── element-plus-layout-rules.md
-    ├── crud-state-page-rules.md
-    └── pencil-mcp-execution-rules.md
+├── LICENSE
+└── product-prototype-design/
+    ├── SKILL.md
+    └── references/
+        ├── element-plus-components-full.md
+        ├── element-plus-prototype-mapping.md
+        ├── element-plus-layout-rules.md
+        ├── crud-state-page-rules.md
+        └── pencil-mcp-execution-rules.md
+```
+
+## Skill name
+
+The installable skill directory name is:
+
+```text
+product-prototype-design
 ```
 
 ## License
