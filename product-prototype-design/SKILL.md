@@ -127,6 +127,10 @@ If a page contains core business rules:
   page title line + 核心逻辑 + 主操作 + 关键校验
 - prefer compact note blocks around `250 x 240` unless the content genuinely needs more space
 - if existing note content is trivial or placeholder text, ignore it instead of treating it as a rule source
+- do not place page-level instruction text, rule summaries, helper paragraphs, or explanatory description cards inside the page canvas by default
+- keep the page itself focused on layout, controls, data, statuses, and interaction states
+- move all non-essential explanatory text to external `note` nodes
+- only keep labels, placeholders, state text, and business data that are necessary to understand the UI structure
 
 ### 9. Validation is visual, not assumed
 
@@ -207,6 +211,7 @@ The result is acceptable only if:
 - business logic notes explain key behavior
 - reference `.pen` structure cues are absorbed where useful, without overriding the Element Plus visual baseline
 - the page reads visually as a traditional backend management system without requiring extra prompt correction
+- explanatory descriptions are not embedded inside the page canvas unless the user explicitly asks for them
 
 ## Prompt Shortcuts
 

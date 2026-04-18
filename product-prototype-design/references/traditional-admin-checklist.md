@@ -56,7 +56,13 @@ If the answer to multiple items is "no", the page is not done.
 - Are shadows minimal?
 - Is color usage restrained and operational?
 
-## 9. Negative Check
+## 9. Prototype Purity
+
+- Does the page avoid embedded explanatory description blocks?
+- Are business rules, guidance, and prompt-like summaries moved to external `note` nodes instead?
+- Does the page keep only the text that is necessary for understanding the UI itself?
+
+## 10. Negative Check
 
 The page should not contain these unless explicitly requested:
 
@@ -66,3 +72,6 @@ The page should not contain these unless explicitly requested:
 - very large corner radius
 - loud sidebar branding
 - decorative motion-first layout ideas
+- instruction cards
+- business-rule explanation cards
+- onboarding-style helper paragraphs

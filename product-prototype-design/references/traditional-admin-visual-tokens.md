@@ -52,6 +52,7 @@ Rule:
 
 - do not use oversized page titles
 - do not create big visual contrast jumps between shell text and page text
+- do not add explanatory helper paragraphs inside the page by default; those belong in external notes
 
 ## 4. Control Heights
 

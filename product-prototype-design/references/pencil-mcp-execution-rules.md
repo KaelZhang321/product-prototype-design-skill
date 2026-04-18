@@ -53,6 +53,8 @@ This matches the official Pencil AI-integration guidance:
 - note must remain outside the page frame boundaries
 - when no user-specific note format is given, prefer the compact 4-line note structure learned from the reference `.pen`:
   page title / 核心逻辑 / 主操作 / 关键校验
+- page-level instructions, guidance, business-rule descriptions, and explanatory summaries should not be rendered inside the prototype by default
+- keep the page itself as a pure prototype surface: controls, layout, data, statuses, and interactions only
 
 ## Default assumptions for prompt simplification
 

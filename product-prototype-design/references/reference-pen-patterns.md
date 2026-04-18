@@ -135,7 +135,7 @@ Do not do this:
 
 The reference create page uses:
 
-- a title/header card with instruction text
+- a title/header area
 - multiple white section cards
 - section title first
 - form rows beneath
@@ -152,8 +152,9 @@ Use this structurally when building add/edit forms:
 Rule:
 
 - prefer 2-4 fields per row depending on business complexity
-- required marks and helper copy should be concise
+- required marks are acceptable, but explanatory helper copy should default to external notes instead of the page body
 - section grouping should reflect business domains, not arbitrary visual splitting
+- do not preserve header explanation text from a reference `.pen` unless the user explicitly wants instructional copy inside the page
 
 ## 7. Drawer Content Pattern
 
