@@ -53,15 +53,14 @@ Use this file to map Element Plus component concepts to prototype page structure
 
 There is no direct Element Plus component for prototype-review business notes.
 
-Use in-page patterns such as:
+Use:
 
-- Alert-like rule block
-- pale info card
-- compact business rule panel
+- Pencil `note`
 
 Placement rule:
 
-- inside the page content area
+- outside the page canvas
 - visually secondary
 - should not displace the primary UI
-- prefer above filters or above the main content card
+- prefer the right-side annotation lane
+- use top-level Pencil `note` nodes for this purpose

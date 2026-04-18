@@ -5,6 +5,7 @@ Business-first product prototype design skill for AI coding agents and prototype
 This skill helps agents build standardized enterprise backend prototypes with:
 
 - Element Plus-style admin UI
+- structure learned from reference `.pen` files when available
 - query/add/edit/delete state pages
 - query-page-as-base modeling
 - right-drawer add/edit states
@@ -45,13 +46,14 @@ npx skills add <owner>/product-prototype-design-skill --skill product-prototype-
 The skill tells the agent to:
 
 1. Use Element Plus as the default design system.
-2. Build query pages first.
-3. Use the query page as the base for add/edit/delete state pages.
-4. Use full-page masks for overlay states.
-5. Use right drawers for add/edit by default.
-6. Require real table structures and visible pagination.
-7. Add business logic notes when needed.
-8. Validate each page state visually.
+2. Extract page-shell and note patterns from a reference `.pen` if one is provided.
+3. Build query pages first.
+4. Use the query page as the base for add/edit/delete state pages.
+5. Use full-page masks for overlay states.
+6. Use right drawers for add/edit by default.
+7. Require real table structures and visible pagination.
+8. Add page-external business logic notes when needed.
+9. Validate each page state visually.
 
 ## Recommended use cases
 
@@ -98,6 +100,7 @@ product-prototype-design-skill/
         ├── element-plus-components-full.md
         ├── element-plus-prototype-mapping.md
         ├── element-plus-layout-rules.md
+        ├── reference-pen-patterns.md
         ├── crud-state-page-rules.md
         └── pencil-mcp-execution-rules.md
 ```
